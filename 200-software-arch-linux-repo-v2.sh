@@ -32,6 +32,8 @@ sudo pacman -S --noconfirm --needed variety
 echo "Installing category Development"
 
 #sudo pacman -S --noconfirm --needed atom
+sudo pacman -S --noconfirm --needed emacs
+sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed geany
 sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed
@@ -149,6 +151,7 @@ sudo pacman -S --noconfirm --needed unclutter
 sudo pacman -S --noconfirm --needed rxvt-unicode
 sudo pacman -S --noconfirm --needed urxvt-perls
 sudo pacman -S --noconfirm --needed xdg-user-dirs
+sudo pacman -S --noconfirm --needed xfce4-terminal
 sudo pacman -S --noconfirm --needed zenity
 #sudo pacman -S --noconfirm --needed
 
