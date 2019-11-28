@@ -44,7 +44,7 @@ echo "Installing category Graphics"
 
 
 echo "Installing category Internet"
-
+sh AUR/install-tridactyl-native-v*.sh
 
 echo "Installing category Multimedia"
 
