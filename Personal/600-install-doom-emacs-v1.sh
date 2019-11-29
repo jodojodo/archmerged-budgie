@@ -19,6 +19,7 @@ git clone https://github.com/hlissner/doom-emacs $HOME"/.emacs.d"
 
 echo "Run the doom install script"
 $HOME"/.emacs.d/bin/doom" install
+$HOME"/.emacs.d/bin/doom" update
 
 echo "################################################################"
 echo "###                Doom Emacs was installed                 ####"
