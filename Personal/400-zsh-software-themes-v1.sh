@@ -17,6 +17,11 @@ echo "Installing all needed software for zsh use and theming"
 
 sh ../AUR/install-zsh-v*.sh
 
+echo "Install custom plugins"
+
+git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+sed -i 's/plugins=(/plugins=(k /g' $HOME"/.zshrc"
+
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
