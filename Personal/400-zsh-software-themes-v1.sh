@@ -19,9 +19,14 @@ sh ../AUR/install-zsh-v*.sh
 
 echo "Install custom plugins"
 
+#Install VI-mode für ZSH
+sed -i 's/plugins=(/plugins=(vi-mode /g' $HOME"/.zshrc"
+
+#Install k as a better l for ZSH
 git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 sed -i 's/plugins=(/plugins=(k /g' $HOME"/.zshrc"
 
+#Install Powerlevel9k Theme
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
 sed -i 's/ZSH_THEME=\".*"/ZSH_THEME=\"powerlevel9k\/powerlevel9k\"/g' $HOME"/.zshrc"
 
