@@ -29,6 +29,9 @@ sed -i 's/plugins=(/plugins=(k /g' $HOME"/.zshrc"
 #Install Powerlevel9k Theme
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
 sed -i 's/ZSH_THEME=\".*"/ZSH_THEME=\"powerlevel9k\/powerlevel9k\"/g' $HOME"/.zshrc"
+sed -i '1s/^/POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir_writable dir vcs)\n/' $HOME"/.zshrc"
+sed -i '1s/^/POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time ssh vi_mode)\n/' $HOME"/.zshrc"
+sed -i '1s/^/POWERLEVEL9K_PROMPT_ON_NEWLINE=true\n/' $HOME"/.zshrc"
 
 #Nerdfonts sind buggy irgendwie
 #sed -i '1s/^/POWERLEVEL9K_MODE=\"nerdfont-complete\"\n/' $HOME"/.zshrc"
