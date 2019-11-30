@@ -29,7 +29,10 @@ sudo pacman -S ttf-liberation --noconfirm --needed
 sudo pacman -S ttf-roboto --noconfirm --needed
 sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
 sudo pacman -S tamsyn-font --noconfirm --needed
+sudo pacman -S powerline-fonts otf-powerline-symbols --noconfirm --needed
 yay -S nerd-fonts-complete --noconfirm --needed
+yay -S ttf-devicons --noconfirm --needed
+yay -S vim-devicons --noconfirm --needed
 
 echo "################################################################"
 echo "####        Fonts from Arch Linux repo have been installed        ####"
