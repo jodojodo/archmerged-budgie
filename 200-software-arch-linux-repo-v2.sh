@@ -36,6 +36,7 @@ sudo pacman -S --noconfirm --needed emacs
 sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed gvim
 sudo pacman -S --noconfirm --needed geany
+sudo pacman -S --noconfirm --needed gdb
 sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed
 
