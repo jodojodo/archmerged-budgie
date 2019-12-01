@@ -46,9 +46,10 @@ echo "################################################################"
 [ -d $HOME"/.fonts" ] || mkdir -p $HOME"/.fonts"
 
 
-echo "Copy fonts to .fonts"
+echo "Copy fonts to local share fonts and create a soft link .fonts"
 
-cp Personal/settings/fonts/* ~/.fonts/
+cp Personal/settings/fonts/* ~/.local/share/fonts/
+ln -s ~/.local/share/fonts ~/.fonts
 
 echo "Building new fonts into the cache files";
 echo "Depending on the number of fonts, this may take a while..."
