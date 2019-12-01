@@ -38,6 +38,10 @@ sudo pacman -S --noconfirm --needed gvim
 sudo pacman -S --noconfirm --needed geany
 sudo pacman -S --noconfirm --needed gdb
 sudo pacman -S --noconfirm --needed meld
+sudo pacman -S --noconfirm --needed python2
+sudo pacman -S --noconfirm --needed python3
+sudo pacman -S --noconfirm --needed python-pip
+sudo pacman -S --noconfirm --needed python2-pip
 #sudo pacman -S --noconfirm --needed
 
 echo "Installing category Education"
