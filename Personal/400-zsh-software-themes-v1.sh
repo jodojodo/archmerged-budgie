@@ -17,6 +17,11 @@ echo "Installing all needed software for zsh use and theming"
 
 sh ../AUR/install-zsh-v*.sh
 
+echo "Customize .zshrc"
+#Uncomment PATH Variable and add .local/bin
+sed -i 's/# export PATH=\$HOME\/bin:\/usr\/local\/bin:\$PATH/export PATH=\$HOME\/.local\/bin:\$PATH/g' $HOME"/.zshrc"
+
+
 echo "Install custom plugins"
 
 #Install VI-mode für ZSH
