@@ -27,6 +27,9 @@ echo "Install custom plugins"
 #Install VI-mode für ZSH
 sed -i 's/plugins=(/plugins=(vi-mode /g' $HOME"/.zshrc"
 
+#Install Emacs Plugin für ZSH
+sed -i 's/plugins=(/plugins=(emacs /g' $HOME"/.zshrc"
+
 #Install k as a better l for ZSH
 git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 sed -i 's/plugins=(/plugins=(k /g' $HOME"/.zshrc"
