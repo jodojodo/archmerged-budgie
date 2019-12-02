@@ -22,7 +22,16 @@ echo "Customize .zshrc"
 sed -i 's/# export PATH=\$HOME\/bin:\/usr\/local\/bin:\$PATH/export PATH=\$HOME\/.local\/bin:\$PATH/g' $HOME"/.zshrc"
 
 
+
+
+
 echo "Install custom plugins"
+
+#Install Tmux für ZSH
+sed -i 's/plugins=(/plugins=(tmux /g' $HOME"/.zshrc"
+#Automatically starts tmux (once) <- disabled, because you don't want to run tmux within tmux.
+#sed -i "1s/^/ZSH_TMUX_AUTOSTART=true\n/" $HOME"/.zshrc"
+#sed -i "1s/^/ZSH_TMUX_AUTOCONNECT=false\n/" $HOME"/.zshrc"
 
 #Install VI-mode für ZSH
 sed -i 's/plugins=(/plugins=(vi-mode /g' $HOME"/.zshrc"
